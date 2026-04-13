@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#0e0e0e"/>
+  <circle cx="300" cy="300" r="120" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="300" y="310" text-anchor="middle" fill="#333" font-family="sans-serif" font-size="14" letter-spacing="4">EP 1</text>
+</svg>
