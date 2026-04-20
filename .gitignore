@@ -1,2 +1,8 @@
 .claude/
 .DS_Store
+
+# 内部ドキュメント（公開リポジトリには含めない）
+CLAUDE.md
+_status.md
+_marketing-strategy.md
+setup-memo.txt
