@@ -1,6 +1,9 @@
 .claude/
 .DS_Store
 
+# 元のPNG素材（最適化済みJPGをimages/直下に配置）
+images/hp用写真素材/
+
 # 内部ドキュメント（公開リポジトリには含めない）
 CLAUDE.md
 _status.md

@@ -72,13 +72,12 @@ img {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    ellipse at 50% 50%,
-    #111 0%,
-    #0a0a0a 70%
-  );
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.92)),
+    url('../images/curtain.jpg') center / cover no-repeat;
   animation: bg-drift 20s ease-in-out infinite alternate;
   z-index: 0;
+  filter: blur(1px);
 }
 
 @keyframes bg-drift {
@@ -154,6 +153,21 @@ img {
 /* ===========================
    Discography
    =========================== */
+
+.discography {
+  position: relative;
+  isolation: isolate;
+}
+
+.discography::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.96), rgba(10, 10, 10, 0.96)),
+    url('../images/piano.jpg') center / cover no-repeat;
+  z-index: -1;
+}
 
 .releases {
   display: grid;
@@ -247,8 +261,26 @@ img {
 }
 
 .about__content {
-  max-width: 480px;
+  max-width: 600px;
   text-align: center;
+}
+
+.about__visual {
+  margin: 0 auto 2.5rem;
+  max-width: 520px;
+  overflow: hidden;
+}
+
+.about__visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(0.7) contrast(1.05);
+  transition: filter 0.8s ease;
+}
+
+.about__visual img:hover {
+  filter: brightness(0.85) contrast(1.05);
 }
 
 .about__text {
@@ -277,6 +309,18 @@ img {
 
 .watch {
   text-align: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.watch::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.94), rgba(10, 10, 10, 0.94)),
+    url('../images/vinyl.jpg') center / cover no-repeat;
+  z-index: -1;
 }
 
 .watch__embed {
