@@ -436,6 +436,21 @@ img {
   color: #888;
 }
 
+.footer__inquiries {
+  font-size: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.footer__inquiries a {
+  color: #444;
+  letter-spacing: 0.12em;
+  transition: color 0.4s ease;
+}
+
+.footer__inquiries a:hover {
+  color: #888;
+}
+
 .footer__copy {
   font-size: 0.7rem;
   color: #333;
